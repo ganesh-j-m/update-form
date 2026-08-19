@@ -1,0 +1,562 @@
+[
+  {
+    "id": "seed-001",
+    "sr": 1,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Anandibai Damle Mahila Mahavidyalaya, Phaltan",
+      "aishe": "C-28979",
+      "principal": "Dr. Baban Jadhav",
+      "principalPhone": "9680557051",
+      "principalEmail": "baban.jadhav@adm.edu.in",
+      "coord": "Dr. Sunil Pawar",
+      "coordPhone": "9713013910",
+      "coordEmail": "sunil.pawar@adm.edu.in",
+      "taluka": "Phaltan",
+      "district": "Satara",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-002",
+    "sr": 2,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Sant Gadge Baba Mahavidyalaya, Gangapur",
+      "aishe": "C-22312",
+      "principal": "Dr. Sharda Kadam",
+      "principalPhone": "9688136138",
+      "principalEmail": "sharda.kadam@sgbm.edu.in",
+      "coord": "Prof. Dr. Manisha Waghmare",
+      "coordPhone": "7167419149",
+      "coordEmail": "manisha.waghmare@sgbm.edu.in",
+      "taluka": "Gangapur",
+      "district": "Chhatrapati Sambhajinagar",
+      "response": "Declined"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-003",
+    "sr": 3,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Jijamata Mahila Mahavidyalaya, Karad",
+      "aishe": "C-30587",
+      "principal": "Prof. Snehal Gaikwad",
+      "principalPhone": "7586603020",
+      "principalEmail": "snehal.gaikwad@jijamata.edu.in",
+      "coord": "Prof. Kavita Pawar",
+      "coordPhone": "8421872363",
+      "coordEmail": "kavita.pawar@jijamata.edu.in",
+      "taluka": "Karad",
+      "district": "Satara",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-004",
+    "sr": 4,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Vivekanand Arts College, Malegaon",
+      "aishe": "C-42447",
+      "principal": "Dr. Archana Chavan",
+      "principalPhone": "7581932046",
+      "principalEmail": "archana.chavan@vivekanand.edu.in",
+      "coord": "Prof. Dr. Manisha Wagh",
+      "coordPhone": "8753864767",
+      "coordEmail": "manisha.wagh@vivekanand.edu.in",
+      "taluka": "Malegaon",
+      "district": "Nashik",
+      "response": "Declined"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-005",
+    "sr": 5,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Milind College of Science, Haveli",
+      "aishe": "C-42044",
+      "principal": "Dr. Vaishali Kamble",
+      "principalPhone": "9817491316",
+      "principalEmail": "vaishali.kamble@milind.edu.in",
+      "coord": "Dr. Priyanka Rane",
+      "coordPhone": "9920951719",
+      "coordEmail": "priyanka.rane@milind.edu.in",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-006",
+    "sr": 6,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Vaidyanath Mahavidyalaya, Shirol",
+      "aishe": "C-42550",
+      "principal": "Prof. Nanda Rane",
+      "principalPhone": "8173833652",
+      "principalEmail": "nanda.rane@vaidyanath.edu.in",
+      "coord": "Prof. Dr. Archana Kale",
+      "coordPhone": "9389845088",
+      "coordEmail": "archana.kale@vaidyanath.edu.in",
+      "taluka": "Shirol",
+      "district": "Kolhapur",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-007",
+    "sr": 7,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Sant Tukaram Mahavidyalaya, Kaij",
+      "aishe": "C-47876",
+      "principal": "Dr. Kavita Patil",
+      "principalPhone": "8405582123",
+      "principalEmail": "kavita.patil@stm.edu.in",
+      "coord": "Prof. Dr. Smita Wagh",
+      "coordPhone": "7514240403",
+      "coordEmail": "smita.wagh@stm.edu.in",
+      "taluka": "Kaij",
+      "district": "Beed",
+      "response": "Pending"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-008",
+    "sr": 8,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Shivsakti Mahila Mahavidyalaya, Rahuri",
+      "aishe": "C-13863",
+      "principal": "Prof. Anil Salunkhe",
+      "principalPhone": "8238878003",
+      "principalEmail": "anil.salunkhe@shivsakti.edu.in",
+      "coord": "Prof. Vijay Shinde",
+      "coordPhone": "7365874400",
+      "coordEmail": "vijay.shinde@shivsakti.edu.in",
+      "taluka": "Rahuri",
+      "district": "Ahmednagar",
+      "response": "Pending"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-009",
+    "sr": 9,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Shri Shivaji Science College, Nilanga",
+      "aishe": "C-46008",
+      "principal": "Dr. Anjali Bhalerao",
+      "principalPhone": "9979695030",
+      "principalEmail": "anjali.bhalerao@ssc.edu.in",
+      "coord": "Prof. Vijay Salunkhe",
+      "coordPhone": "8690793751",
+      "coordEmail": "vijay.salunkhe@ssc.edu.in",
+      "taluka": "Nilanga",
+      "district": "Latur",
+      "response": "Declined"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-010",
+    "sr": 10,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Late Ramesh Warpudkar Mahavidyalaya, Gangapur",
+      "aishe": "C-15438",
+      "principal": "Prof. Dr. Kailas Kale",
+      "principalPhone": "9349061789",
+      "principalEmail": "kailas.kale@lrw.edu.in",
+      "coord": "Dr. Baban Chavan",
+      "coordPhone": "7350542714",
+      "coordEmail": "baban.chavan@lrw.edu.in",
+      "taluka": "Gangapur",
+      "district": "Chhatrapati Sambhajinagar",
+      "response": "Pending"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-011",
+    "sr": 11,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Adarsh Mahavidyalaya, Bhoom",
+      "aishe": "C-19547",
+      "principal": "Dr. Sharda Waghmare",
+      "principalPhone": "7496483003",
+      "principalEmail": "sharda.waghmare@adarsh.edu.in",
+      "coord": "Dr. Dilip Wagh",
+      "coordPhone": "7708104260",
+      "coordEmail": "dilip.wagh@adarsh.edu.in",
+      "taluka": "Bhoom",
+      "district": "Dharashiv",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-012",
+    "sr": 12,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Deogiri College, Barshi",
+      "aishe": "C-54602",
+      "principal": "Prof. Dr. Archana Thorat",
+      "principalPhone": "8527424008",
+      "principalEmail": "archana.thorat@deogiri.edu.in",
+      "coord": "Prof. Pooja Jadhav",
+      "coordPhone": "8523183147",
+      "coordEmail": "pooja.jadhav@deogiri.edu.in",
+      "taluka": "Barshi",
+      "district": "Solapur",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-013",
+    "sr": 13,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Vidnyan Mahavidyalaya, Maval",
+      "aishe": "C-38876",
+      "principal": "Dr. Pooja Sable",
+      "principalPhone": "9465129829",
+      "principalEmail": "pooja.sable@vidnyan.edu.in",
+      "coord": "Dr. Ganesh Patil",
+      "coordPhone": "7156452631",
+      "coordEmail": "ganesh.patil@vidnyan.edu.in",
+      "taluka": "Maval",
+      "district": "Pune",
+      "response": "Pending"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-014",
+    "sr": 14,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Shri Siddheshwar Mahavidyalaya, Haveli",
+      "aishe": "C-11671",
+      "principal": "Prof. Dr. Manisha More",
+      "principalPhone": "9759351559",
+      "principalEmail": "manisha.more@siddheshwar.edu.in",
+      "coord": "Prof. Dr. Suresh Kale",
+      "coordPhone": "8259504871",
+      "coordEmail": "suresh.kale@siddheshwar.edu.in",
+      "taluka": "Haveli",
+      "district": "Pune",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-015",
+    "sr": 15,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Shri Chhatrapati Shivaji Mahavidyalaya, Rahuri",
+      "aishe": "C-40539",
+      "principal": "Prof. Nitin Kale",
+      "principalPhone": "8434848879",
+      "principalEmail": "nitin.kale@shivaji.edu.in",
+      "coord": "Prof. Suresh Shinde",
+      "coordPhone": "9254744982",
+      "coordEmail": "suresh.shinde@shivaji.edu.in",
+      "taluka": "Rahuri",
+      "district": "Ahmednagar",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-016",
+    "sr": 16,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "New Arts, Commerce and Science College, Junnar",
+      "aishe": "C-11513",
+      "principal": "Prof. Smita Bhosale",
+      "principalPhone": "7488428749",
+      "principalEmail": "smita.bhosale@nacs.edu.in",
+      "coord": "Prof. Dr. Sharda Kadam",
+      "coordPhone": "9840954425",
+      "coordEmail": "sharda.kadam@nacs.edu.in",
+      "taluka": "Junnar",
+      "district": "Pune",
+      "response": "Pending"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-017",
+    "sr": 17,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Karmaveer Bhaurao Patil College, Karvir",
+      "aishe": "C-27112",
+      "principal": "Prof. Priyanka Thorat",
+      "principalPhone": "8279360017",
+      "principalEmail": "priyanka.thorat@kbp.edu.in",
+      "coord": "Prof. Dr. Pooja Patil",
+      "coordPhone": "8928862021",
+      "coordEmail": "pooja.patil@kbp.edu.in",
+      "taluka": "Karvir",
+      "district": "Kolhapur",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-018",
+    "sr": 18,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Sadguru Gangageer Mahavidyalaya, Sinnar",
+      "aishe": "C-59697",
+      "principal": "Prof. Rekha Thorat",
+      "principalPhone": "9978678309",
+      "principalEmail": "rekha.thorat@sadguru.edu.in",
+      "coord": "Prof. Dr. Pooja Chavan",
+      "coordPhone": "8894432601",
+      "coordEmail": "pooja.chavan@sadguru.edu.in",
+      "taluka": "Sinnar",
+      "district": "Nashik",
+      "response": "Pending"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-019",
+    "sr": 19,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Loknete Mahavidyalaya, Malegaon",
+      "aishe": "C-28311",
+      "principal": "Prof. Vaishali Bhalerao",
+      "principalPhone": "8307924673",
+      "principalEmail": "vaishali.bhalerao@loknete.edu.in",
+      "coord": "Dr. Smita Deshmukh",
+      "coordPhone": "7749763082",
+      "coordEmail": "smita.deshmukh@loknete.edu.in",
+      "taluka": "Malegaon",
+      "district": "Nashik",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-020",
+    "sr": 20,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Balbhim Arts and Commerce College, Pandharpur",
+      "aishe": "C-24866",
+      "principal": "Prof. Nanda Kale",
+      "principalPhone": "9462642859",
+      "principalEmail": "nanda.kale@balbhim.edu.in",
+      "coord": "Dr. Ramesh Chavan",
+      "coordPhone": "9618245037",
+      "coordEmail": "ramesh.chavan@balbhim.edu.in",
+      "taluka": "Pandharpur",
+      "district": "Solapur",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-021",
+    "sr": 21,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Vasantrao Naik Mahavidyalaya, Phaltan",
+      "aishe": "C-15556",
+      "principal": "Prof. Sharda Deshmukh",
+      "principalPhone": "9517187073",
+      "principalEmail": "sharda.deshmukh@vnm.edu.in",
+      "coord": "Prof. Dr. Pooja Kale",
+      "coordPhone": "7905457188",
+      "coordEmail": "pooja.kale@vnm.edu.in",
+      "taluka": "Phaltan",
+      "district": "Satara",
+      "response": "Pending"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-022",
+    "sr": 22,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Indraraj Arts and Commerce College, Niphad",
+      "aishe": "C-35941",
+      "principal": "Prof. Dr. Vijay Kamble",
+      "principalPhone": "8898168889",
+      "principalEmail": "vijay.kamble@indraraj.edu.in",
+      "coord": "Prof. Dr. Pravin Patil",
+      "coordPhone": "9878246640",
+      "coordEmail": "pravin.patil@indraraj.edu.in",
+      "taluka": "Niphad",
+      "district": "Nashik",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-023",
+    "sr": 23,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Rajarshi Shahu Mahavidyalaya, Kamptee",
+      "aishe": "C-19579",
+      "principal": "Dr. Prakash Deshmukh",
+      "principalPhone": "7609336875",
+      "principalEmail": "prakash.deshmukh@rsm.edu.in",
+      "coord": "Prof. Dr. Manisha Salunkhe",
+      "coordPhone": "7476247204",
+      "coordEmail": "manisha.salunkhe@rsm.edu.in",
+      "taluka": "Kamptee",
+      "district": "Nagpur",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-024",
+    "sr": 24,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Yashwantrao Chavan Mahavidyalaya, Katol",
+      "aishe": "C-59118",
+      "principal": "Dr. Rekha More",
+      "principalPhone": "8309170749",
+      "principalEmail": "rekha.more@ycm.edu.in",
+      "coord": "Prof. Dr. Anil Shinde",
+      "coordPhone": "9130058036",
+      "coordEmail": "anil.shinde@ycm.edu.in",
+      "taluka": "Katol",
+      "district": "Nagpur",
+      "response": "Pending"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-025",
+    "sr": 25,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Rayat Shikshan Sanstha College, Paithan",
+      "aishe": "C-26997",
+      "principal": "Dr. Rajendra Thorat",
+      "principalPhone": "8995710061",
+      "principalEmail": "rajendra.thorat@rayat.edu.in",
+      "coord": "Prof. Priyanka Waghmare",
+      "coordPhone": "9165395729",
+      "coordEmail": "priyanka.waghmare@rayat.edu.in",
+      "taluka": "Paithan",
+      "district": "Chhatrapati Sambhajinagar",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-026",
+    "sr": 26,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Mahatma Phule Mahavidyalaya, Ambad",
+      "aishe": "C-44853",
+      "principal": "Prof. Dr. Vinod Waghmare",
+      "principalPhone": "7648195686",
+      "principalEmail": "vinod.waghmare@mpm.edu.in",
+      "coord": "Dr. Kailas Thorat",
+      "coordPhone": "9572580523",
+      "coordEmail": "kailas.thorat@mpm.edu.in",
+      "taluka": "Ambad",
+      "district": "Jalna",
+      "response": "Pending"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-027",
+    "sr": 27,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Dr. Babasaheb Ambedkar Mahavidyalaya, Katol",
+      "aishe": "C-57526",
+      "principal": "Dr. Anil More",
+      "principalPhone": "7166309234",
+      "principalEmail": "anil.more@dbam.edu.in",
+      "coord": "Prof. Dr. Prakash Bhalerao",
+      "coordPhone": "8832647724",
+      "coordEmail": "prakash.bhalerao@dbam.edu.in",
+      "taluka": "Katol",
+      "district": "Nagpur",
+      "response": "Confirmed"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  },
+  {
+    "id": "seed-028",
+    "sr": 28,
+    "submittedAt": "2026-07-01T09:00:00.000Z",
+    "source": "seed",
+    "values": {
+      "college": "Shankarrao Mohite Patil Mahavidyalaya, Shirol",
+      "aishe": "C-22537",
+      "principal": "Dr. Rekha Bhalerao",
+      "principalPhone": "9929209046",
+      "principalEmail": "rekha.bhalerao@smp.edu.in",
+      "coord": "Dr. Rekha Jadhav",
+      "coordPhone": "9645153748",
+      "coordEmail": "rekha.jadhav@smp.edu.in",
+      "taluka": "Shirol",
+      "district": "Kolhapur",
+      "response": "Declined"
+    },
+    "formId": "5f61fcb5-c6fd-4cde-a558-5864b717f359"
+  }
+]

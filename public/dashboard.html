@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Katta — College Response Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"
+        onload="window.__xlsxReady = true;"
+        onerror="window.__xlsxFailed = true;"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">CK</div>
+      <div>
+        <div class="brand-name">Career Katta</div>
+        <div class="brand-sub">ADMIN PANEL</div>
+      </div>
+    </div>
+    <div class="nav-group-label">Overview</div>
+    <div class="nav-item"><span class="dot"></span> Dashboard</div>
+    <div class="nav-item"><span class="dot"></span> CIF Registrations</div>
+    <div class="nav-group-label">Forms</div>
+    <div class="nav-item"><span class="dot"></span> Forms</div>
+    <div class="nav-item active"><span class="dot"></span> College Responses</div>
+    <div class="nav-item"><span class="dot"></span> Advice Panel</div>
+    <div class="nav-group-label">Events</div>
+    <div class="nav-item"><span class="dot"></span> Events &amp; Workshops</div>
+    <div class="nav-item"><span class="dot"></span> Event Types</div>
+  </aside>
+
+  <main class="main">
+    <div class="topline">
+      <div>
+        <h1 id="dashTitle">Response Forms <span style="color:var(--ink-soft); font-weight:400; font-size:13.5px;">— each form has its own live shortlist</span></h1>
+        <p id="dashSubtitle">Create separate forms for Students, Principals, Coordinators, etc. — each gets its own link and its own dashboard below.</p>
+      </div>
+      <span class="badge-live" id="liveBadge">Live</span>
+    </div>
+
+    <div class="note-strip blue">
+      <span>🔗</span>
+      <span>
+        <b>How this works:</b> click <b>+ New Form</b> to create a new registration form (e.g. Student Registration, Principal Registration, Coordinator Registration) with whichever fields you need. Each form gets its own shareable link — anyone who fills it out shows up live below, with exactly the fields you chose, ready to shortlist.
+      </span>
+    </div>
+
+    <div class="panel" id="formsPanel">
+      <div class="panel-head">
+        <div>
+          <h2>Your Forms</h2>
+          <p id="formsPanelSub">Loading forms…</p>
+        </div>
+        <button class="btn btn-gold btn-sm" id="newFormBtn">+ New Form</button>
+      </div>
+      <div class="forms-grid" id="formsGrid"></div>
+    </div>
+
+    <div class="stats" id="statsRow">
+      <div class="stat-card"><div class="label">Total Records</div><div class="value" id="statTotal">–</div></div>
+      <div class="stat-card"><div class="label">Confirmed</div><div class="value" style="color:var(--green);" id="statConfirmed">–</div></div>
+      <div class="stat-card"><div class="label">Pending</div><div class="value" style="color:var(--amber);" id="statPending">–</div></div>
+      <div class="stat-card accent"><div class="label">Shortlisted (this session)</div><div class="value" id="shortlistStatValue">0</div></div>
+    </div>
+
+    <div class="panel" id="selectedFormPanel" style="display:none;">
+      <div class="panel-head">
+        <div>
+          <h2 id="selectedFormTitle">Response Form</h2>
+          <p id="formLinkPreview">No form selected.</p>
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button class="btn btn-ghost btn-sm" id="openFormBtn" disabled onclick="window.open(getFormUrl(), '_blank')">↗ Open form</button>
+          <button class="btn btn-gold btn-sm" id="openBuilderBtn">🛠 Edit Fields</button>
+        </div>
+      </div>
+
+      <div class="filter-bar" id="filterBar">
+        <div class="field">
+          <label for="searchInput">Search</label>
+          <input id="searchInput" type="text" placeholder="Search across fields…">
+        </div>
+        <div id="dynamicFilters" style="display:contents;"></div>
+        <div class="mode-toggle" id="modeToggle">
+          <button class="active" data-mode="new" id="btnModeNew">Dashboard Preview</button>
+          <button data-mode="old" id="btnModeOld">Export</button>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <button class="btn btn-primary" id="previewBtn">⤓ Preview on Dashboard</button>
+        <button class="btn btn-ghost" id="clearBtn">Clear filters</button>
+        <button class="btn btn-ghost" id="addResponseBtn">+ Add response manually</button>
+        <button class="btn btn-danger" id="bulkDeleteBtn" style="display:none;">🗑 Delete shortlisted</button>
+      </div>
+
+      <div class="table-wrap" id="tableWrap">
+        <div class="empty-state" id="emptyState">
+          <div class="icon">📋</div>
+          <b>Nothing to show yet.</b><br>
+          Click the "Preview on Dashboard" button above — all columns of data will open right here.
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="old-flash" id="oldFlash">
+  <div class="old-flash-card">
+    <div class="xicon">⇩</div>
+    <h3>college_responses_export.xlsx downloaded</h3>
+    <p>This is the old way — the file opens straight in Excel. Shortlisting can't be done on the dashboard itself; you'd have to open the file separately and do it manually.</p>
+    <button class="btn btn-gold" id="closeOldFlash">Close</button>
+  </div>
+</div>
+
+<!-- Form builder modal -->
+<div class="modal-backdrop" id="builderBackdrop">
+  <div class="modal">
+    <div class="modal-head">
+      <div>
+        <h3 id="builderModalTitle">Create a new form</h3>
+        <p id="builderModalSub">Add fields, mark what's required. Save to generate the shareable link.</p>
+      </div>
+      <button class="modal-close" id="closeBuilderBtn">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="field full" style="margin-bottom:12px;">
+        <label for="formTitleInput">Form title</label>
+        <input id="formTitleInput" type="text" placeholder="e.g. Student Registration">
+      </div>
+      <div class="field full" style="margin-bottom:16px;">
+        <label for="formDescInput">Form description</label>
+        <textarea id="formDescInput" rows="2" placeholder="Shown at the top of the form"></textarea>
+      </div>
+
+      <div class="banner-section" id="bannerSection" style="display:none;">
+        <label>Banner / Flyer image <span class="sub" style="font-weight:400;">— shown at the top of this form's public page</span></label>
+        <div id="bannerPreviewWrap" style="display:none;">
+          <img id="bannerPreviewImg" alt="Banner preview">
+          <button type="button" class="btn btn-danger btn-sm" id="removeBannerBtn">🗑 Remove banner</button>
+        </div>
+        <div id="bannerUploadWrap">
+          <input type="file" id="bannerFileInput" accept="image/png,image/jpeg,image/webp,image/gif">
+          <p class="sub" style="font-size:11px; margin-top:4px;">JPG, PNG, WEBP or GIF — max 4MB. Uploads immediately.</p>
+        </div>
+      </div>
+      <div class="note-strip blue" id="bannerHint" style="display:none; margin-bottom:16px;">
+        <span>ℹ️</span><span>आधी फॉर्म <b>save</b> करा — मग इथेच वर बॅनर/फ्लायर अपलोड करता येईल.</span>
+      </div>
+
+      <div id="fieldsList"></div>
+      <button class="add-field-btn" id="addFieldBtn">+ Add a field</button>
+    </div>
+    <div class="modal-foot">
+      <div id="linkArea" style="flex:1; display:none;">
+        <div class="link-box">
+          <code id="shareLink"></code>
+          <button class="btn btn-ghost btn-sm" id="copyLinkBtn">Copy</button>
+        </div>
+      </div>
+      <button class="btn btn-danger" id="deleteFormBtn" style="display:none;">🗑 Delete form</button>
+      <button class="btn btn-ghost" id="cancelBuilderBtn">Close</button>
+      <button class="btn btn-primary" id="saveFormBtn">Save form &amp; get link</button>
+    </div>
+  </div>
+</div>
+
+<!-- Manual add-response modal -->
+<div class="modal-backdrop" id="addBackdrop">
+  <div class="modal">
+    <div class="modal-head">
+      <div>
+        <h3>Add a response manually</h3>
+        <p>Same fields as the public form — use this for phone-in or on-paper responses.</p>
+      </div>
+      <button class="modal-close" id="closeAddBtn">✕</button>
+    </div>
+    <div class="modal-body" id="addFormBody"></div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" id="cancelAddBtn">Cancel</button>
+      <button class="btn btn-primary" id="saveAddBtn">Save response</button>
+    </div>
+  </div>
+</div>
+
+<!-- Admin key modal (replaces native prompt(), which some embedded/in-app browsers block) -->
+<div class="modal-backdrop" id="adminKeyBackdrop">
+  <div class="modal" style="max-width:420px;">
+    <div class="modal-head">
+      <div>
+        <h3>Admin key required</h3>
+        <p>Set with the ADMIN_KEY env var on the server; default is "career-katta-admin".</p>
+      </div>
+      <button class="modal-close" id="closeAdminKeyBtn">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="field full">
+        <label for="adminKeyInput">Admin key</label>
+        <input id="adminKeyInput" type="password" placeholder="Enter admin key" autocomplete="off">
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" id="cancelAdminKeyBtn">Cancel</button>
+      <button class="btn btn-primary" id="confirmAdminKeyBtn">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><span class="dot-gold"></span><span id="toastText"></span></div>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

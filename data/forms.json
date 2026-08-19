@@ -1,0 +1,108 @@
+[
+  {
+    "id": "5f61fcb5-c6fd-4cde-a558-5864b717f359",
+    "slug": "college-responses",
+    "formTitle": "College Response Form",
+    "formTitleMr": "कॉलेज रिस्पॉन्स फॉर्म — करिअर कट्टा",
+    "formDescription": "Please fill in your college's response for the Career Katta program. Fields marked * are required.",
+    "formDescriptionMr": "कृपया करिअर कट्टा कार्यक्रमासाठी आपल्या कॉलेजचा प्रतिसाद खालील फॉर्ममध्ये भरा. * चिन्ह असलेले रकाने भरणे आवश्यक आहे.",
+    "uniqueField": "aishe",
+    "fields": [
+      {
+        "key": "college",
+        "label": "College Name",
+        "type": "text",
+        "required": true,
+        "filterable": false,
+        "searchable": true
+      },
+      {
+        "key": "aishe",
+        "label": "AISHE Code",
+        "type": "text",
+        "required": true,
+        "filterable": false,
+        "searchable": true
+      },
+      {
+        "key": "principal",
+        "label": "Principal Name",
+        "type": "text",
+        "required": true,
+        "filterable": false,
+        "searchable": true
+      },
+      {
+        "key": "principalPhone",
+        "label": "Principal Mobile No",
+        "type": "tel",
+        "required": true,
+        "filterable": false,
+        "searchable": false
+      },
+      {
+        "key": "principalEmail",
+        "label": "Principal Mail ID",
+        "type": "email",
+        "required": false,
+        "filterable": false,
+        "searchable": false
+      },
+      {
+        "key": "coord",
+        "label": "College Coordinator Name",
+        "type": "text",
+        "required": true,
+        "filterable": false,
+        "searchable": true
+      },
+      {
+        "key": "coordPhone",
+        "label": "College Coordinator Phone",
+        "type": "tel",
+        "required": false,
+        "filterable": false,
+        "searchable": false
+      },
+      {
+        "key": "coordEmail",
+        "label": "College Coordinator E-mail",
+        "type": "email",
+        "required": false,
+        "filterable": false,
+        "searchable": false
+      },
+      {
+        "key": "taluka",
+        "label": "Taluka",
+        "type": "text",
+        "required": true,
+        "filterable": true,
+        "searchable": false
+      },
+      {
+        "key": "district",
+        "label": "District",
+        "type": "text",
+        "required": true,
+        "filterable": true,
+        "searchable": false
+      },
+      {
+        "key": "response",
+        "label": "Response",
+        "type": "select",
+        "required": true,
+        "filterable": true,
+        "searchable": false,
+        "options": [
+          "Confirmed",
+          "Pending",
+          "Declined"
+        ]
+      }
+    ],
+    "createdAt": "2026-07-01T09:00:00.000Z",
+    "updatedAt": "2026-07-01T09:00:00.000Z"
+  }
+]
